@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- IMPORTANT: fixes small text on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Web Page</title>
     <style>
         html, body {
@@ -12,8 +16,7 @@
         }
 
         body {
-            background:yellow;
-    
+            background: yellow;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,9 +27,20 @@
             text-align: center;
         }
 
+        /* BIG, RESPONSIVE TEXT */
         h1 {
-            color: black;
+            font-size: 10vw;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 6vw;
             margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 7vw;
+            margin-top: 30px;
         }
 
         ul {
@@ -36,13 +50,20 @@
         }
 
         li {
-            font-size: 18px;
+            font-size: 5vw;
+            margin: 8px 0;
+        }
+
+        p {
+            font-size: 5vw;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>John Nelmar Buenacosa</h1>
+
         <h3>Hobbies</h3>
         <ul>
             <li>Reading</li>
@@ -50,10 +71,10 @@
             <li>Listening to Music</li>
             <li>Learning New Things</li>
         </ul>
-    <h2> Personal Information</h2>
-    <p> Age:17</p>
-    <p> Gender:Male</p>
+
+        <h2>Personal Information</h2>
+        <p>Age: 17</p>
+        <p>Gender: Male</p>
     </div>
 </body>
-
 </html>
